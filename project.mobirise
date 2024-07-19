@@ -1,0 +1,156 @@
+{
+  "settings": {
+    "name": "Trust wallet extentions",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": false,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/trust-wallet.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://trust-wallet-login.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://trust-wallet-login.github.io/sitemap.xml\n",
+    "mbrsiteDomain": "qmfaa1g0ox",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Trust Wallet Login : Unlock the Crypto Vault",
+        "meta_descr": "Log in to Trust Wallet and let your crypto journey begin. Securely access, manage, and grow your digital portfolio - all within the trusted confines of this leading decentralized wallet.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/trustwallet.png\" alt=\"trust wallet\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uiRo9h9yNb",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#757b62",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#757b62"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Unleashing the Power of Decentralization: Exploring the Trust Wallet Extension</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-evolving landscape of the digital world, the quest for secure and user-friendly cryptocurrency management has been a constant challenge. Enter Trust Wallet, a pioneering digital wallet that has emerged as a game-changer in the crypto ecosystem. Today, we delve into the intricacies of the <a href=\"https://trust-wallet-extensions.github.io/\" class=\"text-primary\"><b>Trust Wallet extension</b></a>, exploring its features, benefits, and the profound impact it has had on the way we interact with the decentralized finance (DeFi) realm.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Rise of Trust Wallet login:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Trust Wallet, launched in 2017, was conceived with a singular vision – to empower individuals with the ability to manage their digital assets seamlessly and securely. As the cryptocurrency market continued to mature and gain mainstream adoption, the need for a trustworthy and intuitive wallet solution became increasingly apparent.<br><br>One of the key factors that set Trust Wallet apart is its unwavering commitment to decentralization. Unlike traditional financial institutions that centralize control over user funds, Trust Wallet operates on a decentralized model, placing the power firmly in the hands of its users. This fundamental principle has been the driving force behind the wallet's rapid growth and widespread adoption.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Unleashing the Power of the Trust Wallet Extension:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The introduction of the <a href=\"https://trustwallet.com/\" class=\"text-primary\">Trust Wallet extension</a> has further amplified the capabilities of this innovative digital wallet. By seamlessly integrating with the user's web browser, the extension has transformed the way individuals interact with decentralized applications (dApps) and manage their crypto assets.<br><br><b>1.Seamless dApp Integration:</b><br>One of the standout features of the Trust Wallet extension is its seamless integration with dApps. Users can now access a vast ecosystem of decentralized applications, ranging from DeFi platforms to non-fungible token (NFT) marketplaces, without the need to constantly switch between their wallet and the web browser.<br><br>The extension acts as a secure gateway, allowing users to authenticate their identity, authorize transactions, and interact with dApps directly from the browser. This streamlined experience not only enhances user convenience but also fosters greater adoption of decentralized technologies by making them more accessible and user-friendly.<br><br><b>2.Secure Asset Management:</b><br>The Trust Wallet extension takes security seriously, providing users with robust tools to safeguard their digital assets. Leveraging industry-standard encryption and decentralized storage protocols, the extension ensures that users' private keys and sensitive information remain securely within their control, without ever being exposed to centralized servers or third-party entities.<br><br>One of the key security features of the Trust Wallet extension is its support for hardware wallets. Users can seamlessly connect their hardware wallets, such as Ledger or Trezor, to the extension, further enhancing the overall security of their crypto holdings. This integration allows users to benefit from the added layer of protection provided by hardware wallets while maintaining the convenience of the browser-based interface.<br><br><b>3.Seamless Token Management:</b><br>The Trust Wallet extension simplifies the process of managing a diverse portfolio of digital assets. Users can easily view their token balances, track the performance of their investments, and initiate transactions directly within the extension's intuitive interface.<br><br>Moreover, the extension supports a wide range of cryptocurrencies and tokens, including popular ones like Bitcoin, Ethereum, and Binance Coin, as well as a growing number of alternative and emerging digital assets. This expansive support enables users to consolidate their crypto holdings and manage their finances from a single, convenient platform.<br><br><b>4.Decentralized Governance and Community Engagement:</b><br>One of the remarkable aspects of the Trust Wallet extension is its commitment to decentralized governance. The wallet's development and strategic decisions are influenced by a vibrant community of users, developers, and stakeholders. This participatory approach ensures that the extension's features and functionalities evolve in alignment with the needs and preferences of the broader cryptocurrency ecosystem.<br><br>The Trust Wallet extension encourages active community engagement through various channels, such as social media platforms, online forums, and dedicated feedback mechanisms. Users can share their insights, report issues, and contribute to the ongoing enhancement of the wallet's capabilities, fostering a collaborative and empowered user base.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Impact of the Trust Wallet Extension:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The introduction of the Trust Wallet extension has had a profound impact on the way individuals interact with the decentralized finance landscape. By bridging the gap between traditional web browsing and the world of crypto, the extension has opened new avenues for mainstream adoption and empowered users to take control of their digital assets.<br><br><b>1.Increased Accessibility and Adoption of DeFi:</b><br>The seamless integration of the Trust Wallet extension with dApps has significantly lowered the barrier to entry for individuals interested in exploring the DeFi ecosystem. Users no longer need to navigate complex setup processes or switch between multiple platforms to access decentralized services.<br><br>The extension's user-friendly interface and intuitive design have made it easier for crypto newcomers to engage with a wide range of DeFi applications, such as decentralized exchanges, lending platforms, and yield farming opportunities. This increased accessibility has driven greater mainstream adoption of decentralized finance, as more individuals become empowered to participate in the crypto economy.<br><br><b>2.Enhanced Security and Self-Custody:</b><br>The Trust Wallet extension's emphasis on decentralization and self-custody has had a profound impact on the way users approach the security of their digital assets. By providing a secure and user-friendly platform for managing crypto holdings, the extension has empowered individuals to take control of their finances and reduce their reliance on centralized institutions.<br><br>The integration with hardware wallets and the extension's robust security features have instilled a greater sense of confidence among users, knowing that their assets are protected by industry-leading encryption and decentralized storage protocols. This shift towards self-custody has not only enhanced the overall security of the crypto ecosystem but has also fostered a deeper understanding and appreciation of the principles of decentralization.<br><br><b>3.Fostering a Vibrant Crypto Community:</b><br>The Trust Wallet extension's commitment to decentralized governance and community engagement has had a significant impact on the broader crypto ecosystem. By actively involving users in the decision-making process and encouraging feedback, the extension has fostered a vibrant and engaged community of crypto enthusiasts.<br><br>This collaborative approach has not only strengthened the development and evolution of the Trust Wallet extension but has also contributed to the overall growth and maturity of the cryptocurrency landscape. Users feel empowered to voice their opinions, share their experiences, and contribute to the shaping of the decentralized finance industry.<br><br>Furthermore, the extension's support for a wide range of digital assets has enabled users to explore and engage with a diverse range of cryptocurrencies and blockchain-based projects. This exposure has helped to expand the reach and adoption of the crypto ecosystem, as more individuals become aware of the vast array of opportunities available within the decentralized finance space.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of the Trust Wallet Extension:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">As the cryptocurrency market continues to evolve and new technological advancements emerge, the future of the Trust Wallet extension holds immense promise. The team behind Trust Wallet is committed to continuously enhancing the extension's capabilities and adapting to the changing needs of its user base.<br><br><b>1.Expanding Ecosystem Integration:</b><br>One area of focus for the future development of the Trust Wallet extension is the expansion of its ecosystem integrations. The team is actively working on expanding the extension's compatibility with a wider range of dApps, decentralized exchanges, and emerging blockchain-based platforms.<br><br>By strengthening these integrations, the extension will provide users with an even more comprehensive and seamless experience, allowing them to navigate the ever-growing decentralized finance landscape with ease. This integration will not only drive increased adoption but also foster greater collaboration and innovation within the crypto community.<br><br><b>2.Advancing Security and Privacy Features:</b><br>As the importance of security and privacy continues to grow in the digital landscape, the Trust Wallet extension is poised to stay at the forefront of these critical aspects. The team is dedicated to implementing cutting-edge security measures, such as advanced encryption protocols, biometric authentication, and multi-factor authentication options.<br><br>Additionally, the extension is exploring ways to enhance user privacy, ensuring that individuals can manage their digital assets without compromising their personal information. This focus on security and privacy will be instrumental in building trust and fostering widespread adoption of the Trust Wallet extension among both seasoned crypto users and newcomers to the space.<br><br><b>3.Embracing Emerging Technologies:</b><br>The Trust Wallet extension is also committed to staying at the forefront of technological advancements within the cryptocurrency and blockchain sectors. As new innovations emerge, such as the integration of decentralized identities, cross-chain interoperability, and decentralized oracles, the extension will adapt and incorporate these capabilities to provide users with a future-proof and versatile crypto management solution.<br><br>By embracing these cutting-edge technologies, the Trust Wallet extension will continue to empower users, enabling them to navigate the evolving decentralized finance landscape with confidence and ease. This forward-looking approach will ensure that the extension remains a leading player in the crypto ecosystem, driving innovation and shaping the future of decentralized finance.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The Trust Wallet extension has undoubtedly left an indelible mark on the cryptocurrency landscape. By bridging the gap between traditional web browsing and the decentralized finance realm, the extension has empowered users to take control of their digital assets, explore a wide range of dApps, and participate in the crypto economy with confidence and security.<br><br>As the cryptocurrency market continues to evolve, the Trust Wallet extension is poised to play a pivotal role in driving mainstream adoption, fostering a vibrant community, and shaping the future of decentralized finance. Through its unwavering commitment to decentralization, user-centric design, and continuous innovation, the Trust Wallet extension has emerged as a true game-changer in the world of digital asset management.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uiRo9y5s4z",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
